@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+    <mapping>
+        <provenance>login</provenance>
+        <action>controleur.LoginCmd</action>
+    </mapping>
+    <mapping>
+        <provenance>update</provenance>
+        <action>controleur.UpdateCmd</action>
+    </mapping>
+    <mapping>
+        <provenance>logout</provenance>
+        <action>controleur.LogoutCmd</action>
+    </mapping>
+</mappings>

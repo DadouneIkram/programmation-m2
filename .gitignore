@@ -1,0 +1,10 @@
+@"
+target/
+.vscode/
+.idea/
+*.class
+*.log
+.classpath
+.project
+.settings/
+"@ | Set-Content .gitignore

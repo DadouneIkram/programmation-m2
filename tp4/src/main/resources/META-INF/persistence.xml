@@ -6,12 +6,14 @@
   <persistence-unit name="persistence_sql">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <class>com.tp.entity.Personne</class>
+    <class>com.tp.entity.Info</class>
+    <class>com.tp.entity.Activite</class>
     <properties>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
       <property name="javax.persistence.jdbc.url"
         value="jdbc:mysql://127.0.0.1:3306/tp4_db?serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;useSSL=false" />
       <property name="javax.persistence.jdbc.user" value="root" />
-      <property name="javax.persistence.jdbc.password" value="VOTRE_MOT_DE_PASSE" />
+      <property name="javax.persistence.jdbc.password" value="ikram123" />
       <property name="hibernate.show_sql" value="true" />
       <property name="hibernate.hbm2ddl.auto" value="create" />
     </properties>

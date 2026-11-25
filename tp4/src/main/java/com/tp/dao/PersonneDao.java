@@ -1,20 +1,13 @@
 package com.tp.dao;
 
 import com.tp.entity.Personne;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import java.util.List;
 
-public class PersonneDao {
+public interface PersonneDao extends Dao<Personne> {
+  List<Personne> findByNom(String nom);
 
-    private EntityManagerFactory entityManagerFactory =
-            Persistence.createEntityManagerFactory("persistence_sql");
+  List<Personne> trouveTout();
 
-    public void sauve(Personne p) {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        entityManager.getTransaction().begin();
-        entityManager.persist(p);
-        entityManager.getTransaction().commit();
-        entityManager.close();
-    }
+  Personne findById(long id);
+
 }
